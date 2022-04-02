@@ -20,10 +20,10 @@
     
     // Create the email and send the message
     $to = 'tommy.immediato@gmail.com';
-    $email_subject = "Acquisto biglietto";
+    $email_subject = "Estrazione Pasqua DiiN 2022";
     $email_body = "Richiesto acquisto biglietto dal sito.\n\n"."*****************************************\n\n
-    Nome: $nome Cognome: $cognome Numero del biglietto: $biglietto Email: $email Telefono: $cellulare \n\n*****************************************";
-    $headers .= "Rispondi a: $email";   
+    Nome: $nome\n Cognome: $cognome\n Numero del biglietto: $biglietto\n Email: $email\n Telefono: $cellulare \n\n*****************************************";
+    $headers .= "Rispondi a: $email oppure $cellulare";   
     mail($to,$email_subject,$email_body,$headers);
     header('Location: ../index.html');
 	exit;
